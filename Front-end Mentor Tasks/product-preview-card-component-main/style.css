@@ -1,0 +1,145 @@
+/* Start Global Variables */
+:root {
+  --main-color: hsl(158, 36%, 37%);
+  --secondary-color: hsl(30, 38%, 92%);
+  /* ### Neutral */
+  --neutral-darkBlue: hsl(212, 21%, 14%);
+  --neutral-grayishBlue: hsl(228, 12%, 48%);
+}
+/* End Global Variables */
+
+/*Start global rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: var(--neutral-darkBlue);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0px;
+  margin: 0px;
+}
+a {
+  text-decoration: none;
+}
+.design {
+  height: 700px;
+  position: relative;
+}
+.container {
+  background-color: #f0f0f0;
+  margin: auto;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  border-radius: 16px;
+  max-width: 40%;
+}
+
+/* Small Screens */
+
+/* End of Global Rules */
+
+/* Start Styleing */
+.img-cont {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url("images/image-product-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.text-cont {
+  width: 50%;
+  height: 100%;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.text-cont h1 {
+  font-family: "Fraunces", serif;
+  line-height: 0.9;
+}
+
+p:first-child {
+  font-size: 12px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+p:not(:first-child) {
+  line-height: 1.6;
+  font-size: 12px;
+  font-weight: 400;
+}
+.text-cont .price {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 24px;
+  align-items: center;
+}
+.text-cont .current-price {
+  font-family: "Fraunces", serif;
+  font-size: 28px;
+  color: var(--main-color);
+  font-weight: bolder;
+}
+.text-cont .old-price {
+  font-size: 12px;
+  text-decoration: line-through;
+}
+.text-cont .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0;
+  background-color: var(--main-color);
+  border-radius: 8px;
+}
+.button:hover {
+  background-color: hsl(158, 36%, 19%);
+}
+.a-button {
+  color: var(--secondary-color);
+}
+/* End Styleing */
+@media (max-width: 499px) {
+  .container {
+    flex-direction: column;
+    height: 90%;
+    min-width: 300px;
+  }
+  .img-cont {
+    width: 100%;
+  }
+  .text-cont {
+    width: 100%;
+    gap: 20px;
+  }
+}
+@media (min-width: 500px) {
+  .container {
+    flex-direction: row;
+    height: 65%;
+    min-width: 500px;
+  }
+}
