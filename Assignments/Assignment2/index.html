@@ -3,27 +3,157 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/RouteLogo.jpeg" />
+    <style>
+      body {
+        font-family: "Kode Mono", sans-serif;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      td {
+        padding: 0;
+      }
+    </style>
+    <title>Assignment 2 | Form Practice</title>
   </head>
   <body>
-    <form
-      action="get"
-      style="display: flex; flex-direction: column; align-items: center"
-    >
-      <input type="text" />
-      <input type="password" />
-      <input type="color" />
-      <input type="number" />
-      <input type="url" />
-      <input type="email" />
-      <input type="date" />
-      <input type="file" />
-      <input type="radio" />
-      <input type="range" />
-      <input type="search" />
-      <input type="tel" />
-      <input type=" reset" />
-      <input type="submit" />
+    <form action="">
+      <fieldset style="background-color: rgb(232, 58, 58)">
+        <legend style="background-color: rgb(56, 250, 250); padding: 5px 10px">
+          Personal Data
+        </legend>
+        <br />
+        <form action="">
+          <fieldset style="background-color: peru">
+            <br />
+            <legend
+              style="
+                color: white;
+                background-color: rgb(0, 0, 56);
+                padding: 40px 20px;
+              "
+            >
+              Your Name
+            </legend>
+            <table>
+              <tr>
+                <td>first name</td>
+                <td>:</td>
+                <td>
+                  <input
+                    type="text"
+                    placeholder="ex ali"
+                    name="firstName"
+                    style="width: 100%; height: 100%"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>second name</td>
+                <td>:</td>
+                <td>
+                  <input
+                    type="text"
+                    name="secondName"
+                    placeholder="ex mostafa"
+                    style="width: 100%; height: 100%"
+                  />
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+        </form>
+        <br />
+        <br />
+        <table>
+          <tr>
+            <td>your phone</td>
+            <td>:</td>
+            <td>
+              <input
+                type="number"
+                name="phone"
+                style="width: 100%; height: 100%"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>:</td>
+            <td>
+              <input
+                type="email"
+                name="email"
+                style="width: 100%; height: 100%"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>password</td>
+            <td>:</td>
+            <td>
+              <input
+                type="password"
+                name="password"
+                style="width: 100%; height: 100%"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>re-password</td>
+            <td>:</td>
+            <td>
+              <input
+                type="password"
+                name="re-password"
+                style="width: 100%; height: 100%"
+              />
+            </td>
+          </tr>
+        </table>
+        <br />
+        <input type="radio" name="gender" value="male" id="male" checked />
+        <label for="male"> male </label>
+        <br />
+        <input type="radio" name="gender" value="female" id="female" />
+        <label for="female"> female </label>
+        <br />
+        <br />
+        <input type="checkbox" name="lang" value="arabic" id="arabic" />
+        <label for="arabic"> Arabic </label>
+        <br />
+        <input type="checkbox" name="lang" value="english" id="english" />
+        <label for="english"> English </label>
+        <br />
+        <input type="checkbox" name="lang" value="french" id="french" />
+        <label for="french"> French </label>
+        <br />
+        <br />
+        <select name="university" id="" required>
+          <option value="" disabled selected>Select University</option>
+          <optgroup label="Public">
+            <option value="cairoUni">Cairo University</option>
+            <option value="AinShUni">Ain Shams University</option>
+          </optgroup>
+          <optgroup label="Private">
+            <option value="auc">AUC</option>
+            <option value="buc">BUC</option>
+            <option value="guc">GUC</option>
+          </optgroup>
+        </select>
+        <br />
+        <br />
+        <input type="image" name="" id="" src="btn.png" />
+        <!-- <img src="" alt="" /> -->
+      </fieldset>
     </form>
   </body>
 </html>
