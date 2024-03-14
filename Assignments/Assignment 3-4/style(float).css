@@ -1,0 +1,168 @@
+/* Global Rules */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition-duration: 0.3s;
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: "AlegreyaSans";
+  src: url("fonts/AlegreyaSans-Medium.ttf") format("truetype"),
+    url("fonts/AlegreyaSans-Bold.ttf") format("truetype"),
+    url("fonts/AlegreyaSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SalomSans";
+  src: url("fonts/SalomSans-Light.ttf") format("truetype"),
+    url("fonts/SalomSans-Regular.ttf") format("truetype");
+}
+body {
+  font-family: "SalomSans";
+}
+.section {
+  margin: 40px auto;
+  width: 100%;
+  height: 100dvh;
+}
+/* End Global Rules */
+/* Start Styling home section */
+.section-home {
+  margin-top: 0;
+  position: relative;
+  z-index: 2;
+  background-image: url(images/drew-coffman-1872.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+.section-home .blur {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+.section .home {
+  position: relative;
+  z-index: 1;
+  margin: auto;
+  width: 45%;
+  height: 100%;
+  display: table;
+}
+.center-align {
+  display: table-cell;
+  vertical-align: middle;
+}
+.home .welcome {
+  font-weight: 300;
+  font-size: 22px;
+}
+.home .title {
+  font-family: "AlegreyaSans";
+  font-size: 70px;
+  padding: 16px 0;
+}
+.home .brief {
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 20px;
+}
+.home a {
+  display: inline-block;
+  min-width: 110px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 40px 10px;
+  padding: 12px 20px;
+  border-radius: 2px;
+}
+.home a:hover {
+  color: rgb(11, 11, 11);
+  background-color: white;
+}
+.home .learn {
+  background-color: #8e7754;
+}
+.home .contact {
+  border: 1px solid white;
+  border-radius: 6px;
+}
+
+/* End of Styling home section */
+
+/* Start Styling Who are we section */
+.section-who {
+  margin: 150px auto;
+  width: 80%;
+  height: 100%;
+}
+.text-cont {
+  float: right;
+  width: 45%;
+  margin-top: 8%;
+}
+.clear {
+  clear: both;
+}
+.text-cont h2 {
+  margin-bottom: 20px;
+}
+.text-cont .main-p {
+  margin-bottom: 20px;
+  font-weight: 200;
+  color: rgb(121, 121, 121);
+}
+.table tbody {
+  vertical-align: middle;
+}
+.who img {
+  width: 50%;
+}
+.table td {
+  padding: 5px;
+  color: rgb(121, 121, 121);
+}
+.table .icon {
+  display: block;
+  width: 40px;
+  border: 1px solid rgb(198, 198, 198);
+  border-radius: 99px;
+}
+/* End of styling who r we section */
+/* Start styling the our location */
+.section-loc {
+  height: 100%;
+}
+.our-location {
+  margin: 150px auto;
+  width: 80%;
+}
+.text-cont2 {
+  float: left;
+  width: 45%;
+  margin-top: 10%;
+}
+
+.our-location img {
+  margin-left: 5%;
+  width: 50%;
+}
+.text-cont2 h2 {
+  margin-bottom: 20px;
+}
+.text-cont2 p {
+  margin-bottom: 20px;
+  font-weight: 200;
+  color: rgb(121, 121, 121);
+}
+/* End of styling the our location */
