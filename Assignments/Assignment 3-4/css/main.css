@@ -9,6 +9,17 @@
   padding: 0;
   margin: 0;
 }
+@font-face {
+  font-family: "AlegreyaSans";
+  src: url("../fonts/AlegreyaSans-Bold.ttf") format("truetype"),
+    url("../fonts/AlegreyaSans-Bold.ttf") format("truetype"),
+    url("../fonts/AlegreyaSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SalomSans";
+  src: url("../fonts/SalomSans-Light.ttf") format("truetype"),
+    url("../fonts/SalomSans-Regular.ttf") format("truetype");
+}
 html {
   scroll-behavior: smooth;
 }
@@ -19,7 +30,7 @@ a {
   text-decoration: none;
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "SalomSans";
 }
 .container {
   padding: 0 15px;
@@ -66,16 +77,16 @@ header .container nav {
   align-items: center;
 }
 header .logo img {
-  height: 40px;
+  height: 50px;
 }
 header nav ul {
   display: flex;
 }
 header nav ul a {
-  padding: 20px 10px;
+  padding: 40px 20px;
   display: block;
   transition: 0.3s;
-  font-size: 14px;
+  font-size: 16px;
   color: white;
   text-decoration: none;
   z-index: 2;
