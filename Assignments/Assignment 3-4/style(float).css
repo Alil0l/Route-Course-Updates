@@ -166,3 +166,91 @@ body {
   color: rgb(121, 121, 121);
 }
 /* End of styling the our location */
+/* styling baking section */
+.section-bak {
+  margin: 0 auto 150px auto;
+  width: 80%;
+  height: auto;
+}
+.titleba {
+  text-align: center;
+}
+.titleba h2 {
+  font-size: 26px;
+  font-weight: 600;
+  font-family: "AlegreyaSans";
+}
+.titleba p {
+  font-size: 18px;
+  font-weight: 200;
+  color: rgb(121, 121, 121);
+  margin-bottom: 44px;
+}
+.item {
+  display: inline-block;
+  width: 31%;
+  /* margin: 0 1%; */
+  text-align: center;
+  margin-inline: 1%;
+}
+.item img {
+  width: 100%;
+  margin-bottom: 24px;
+}
+.item h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.item p {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.8;
+  color: rgb(121, 121, 121);
+}
+/*  end of styling items */
+
+/* start styling contact section */
+.section-cont {
+  width: 80%;
+  height: 100%;
+}
+.section-cont .text-contact {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.section-cont img {
+  width: 50%;
+}
+.section-cont tbody tr img {
+  width: 40px;
+  background-color: #8e7754;
+  border: 1px solid grey;
+  border-radius: 99px;
+}
+.text-contact h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.text-contact p {
+  font-size: 16px;
+  font-weight: 200;
+  color: rgb(121, 121, 121);
+  margin-bottom: 28px;
+}
+
+.text-contact table tr td {
+  padding: 5px 10px;
+  color: rgb(121, 121, 121);
+}
+/* end of styling contact */
+
+/* start styling footer */
+.section-foot {
+  width: 100%;
+  height: 100%;
+  background-color: #403d38;
+}
