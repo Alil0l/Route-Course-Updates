@@ -72,6 +72,7 @@ body {
 /* End of global rules */
 
 /* start styling navbar*/
+
 header {
   position: absolute;
   width: 80%;
@@ -79,14 +80,17 @@ header {
   transform: translate(-50%);
   z-index: 2;
 }
-header .content {
+header .h-content nav img {
+  width: 50px;
+}
+header .h-content {
   min-height: 97px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
 }
-header .content nav {
+header .h-content nav {
   flex: 1;
   display: flex;
   justify-content: flex-end;

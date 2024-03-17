@@ -3,22 +3,36 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
 }
 @font-face {
   font-family: "AlegreyaSans";
-  src: url("fonts/AlegreyaSans-Medium.ttf") format("truetype"),
-    url("fonts/AlegreyaSans-Bold.ttf") format("truetype"),
-    url("fonts/AlegreyaSans-Regular.ttf") format("truetype");
+  src: url("../fonts/AlegreyaSans-Bold.ttf") format("truetype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "AlegreyaSans";
+  src: url("../fonts/AlegreyaSans-Medium.ttf") format("truetype");
+
+  font-weight: 600;
+}
+@font-face {
+  font-family: "AlegreyaSans";
+  src: url("../fonts/AlegreyaSans-Regular.ttf") format("truetype");
+  font-weight: 400;
 }
 @font-face {
   font-family: "SalomSans";
-  src: url("fonts/SalomSans-Light.ttf") format("truetype"),
-    url("fonts/SalomSans-Regular.ttf") format("truetype");
+  src: url("../fonts/SalomSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "SalomSans";
+  src: url("../fonts/SalomSans-Light.ttf") format("truetype");
+  font-weight: 200;
 }
 body {
   font-family: "SalomSans";
-  scroll-behavior: smooth;
 }
 html {
   scroll-behavior: smooth;
@@ -26,13 +40,71 @@ html {
 a {
   text-decoration: none;
 }
+ul {
+  list-style: none;
+}
 .section {
   margin: 40px auto;
   width: 100%;
   height: 100dvh;
 }
+.container {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
 /* End Global Rules */
 /* Start Styling home section */
+header {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 5;
+}
+header .h-content nav img {
+  width: 40px;
+  display: none;
+}
+header .h-content {
+  min-height: 97px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+header .h-content nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .logo img {
+  height: 50px;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul a {
+  padding: 40px 20px;
+  display: block;
+  transition: 0.3s;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  z-index: 2;
+}
+header nav ul a.active {
+  color: #8e7754;
+  border-top: 2px solid #8e7754;
+}
+header nav ul a:hover {
+  color: #8e7754;
+}
+
+header nav ul {
+  display: flex;
+}
 .section-home {
   margin-top: 0;
   position: relative;

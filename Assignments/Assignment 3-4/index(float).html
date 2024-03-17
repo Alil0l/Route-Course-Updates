@@ -18,7 +18,7 @@
     ></script>
     <link rel="stylesheet" href="style(float).css" />
     <script defer>
-      if (navigator.geolocation)
+      if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
           (e) => {
             const { latitude } = e.coords;
@@ -31,18 +31,50 @@
             }).addTo(map);
             L.marker(coords)
               .addTo(map)
-              .bindPopup(`FREE DELIVERY </br></br> CURRENT LOCATION!`)
+              .bindPopup(`Route Academy @ Mostafa El-Nahas`)
               .openPopup();
           },
           (e) => {
-            alert(
-              `Map load error, Access DENIED,\r\r I'm 'Ali Mostafa Student @ Route' Used JS to add a real map to the site`
-            );
+            let latitude = 30.056077;
+            let longitude = 31.3593139;
+            const coords = [latitude, longitude];
+            const map = L.map("map").setView(coords, 12);
+            L.tileLayer("https://tile.openstreetmap.fr/hot/{z}/{x}/{y}.png", {
+              attribution:
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            }).addTo(map);
+            L.marker(coords)
+              .addTo(map)
+              .bindPopup(`Route Academy @ Mostafa El-Nahas`)
+              .openPopup();
           }
         );
+      }
     </script>
   </head>
   <body>
+    <div class="container">
+      <header>
+        <div class="h-content">
+          <div class="logo">
+            <a href="#home" class="logo">
+              <img src="images/bakery-light-1.png" alt="logo" />
+            </a>
+          </div>
+          <nav class="nav-bar">
+            <img src="images/Icons/heart.png" alt="menu" class="toggle-menu" />
+            <ul>
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Our Offer</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
     <div class="btn-top">
       <a href="#"><img src="images/Icons/arrow.png" alt="" /></a>
     </div>
