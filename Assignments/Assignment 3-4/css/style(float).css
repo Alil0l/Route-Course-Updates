@@ -109,7 +109,7 @@ header nav ul {
   margin-top: 0;
   position: relative;
   z-index: 2;
-  background-image: url(images/drew-coffman-1872.jpg);
+  background-image: url(../images/drew-coffman-1872.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -381,7 +381,7 @@ header nav ul {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url(images/contact-details-map.png);
+  background-image: url(../images/contact-details-map.png);
   background-size: contain;
   opacity: 0.2;
   top: 0;

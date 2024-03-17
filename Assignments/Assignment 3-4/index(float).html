@@ -16,7 +16,8 @@
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""
     ></script>
-    <link rel="stylesheet" href="style(float).css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style(float).css" />
     <script defer>
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
@@ -31,7 +32,7 @@
             }).addTo(map);
             L.marker(coords)
               .addTo(map)
-              .bindPopup(`Route Academy @ Mostafa El-Nahas`)
+              .bindPopup(`Your Current Location`)
               .openPopup();
           },
           (e) => {
