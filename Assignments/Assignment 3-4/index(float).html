@@ -3,11 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style(float).css" />
-
     <title>Bakery</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" href="style(float).css" />
+    <script defer>
+      if (navigator.geolocation)
+        navigator.geolocation.getCurrentPosition(
+          (e) => {
+            const { latitude } = e.coords;
+            const { longitude } = e.coords;
+            const coords = [latitude, longitude];
+            const map = L.map("map").setView(coords, 12);
+            L.tileLayer("https://tile.openstreetmap.fr/hot/{z}/{x}/{y}.png", {
+              attribution:
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            }).addTo(map);
+            L.marker(coords)
+              .addTo(map)
+              .bindPopup(`FREE DELIVERY </br></br> CURRENT LOCATION!`)
+              .openPopup();
+          },
+          (e) => {
+            alert(
+              `Map load error, Access DENIED,\r\r I'm 'Ali Mostafa Student @ Route' Used JS to add a real map to the site`
+            );
+          }
+        );
+    </script>
   </head>
   <body>
+    <div class="btn-top">
+      <a href="#"><img src="images/Icons/arrow.png" alt="" /></a>
+    </div>
     <div class="section section-home">
       <div class="blur"></div>
       <div class="home">
@@ -170,13 +208,129 @@
           </tbody>
         </table>
       </div>
-      <img src="images/map.PNG" alt="" />
+      <!-- <img src="images/map.PNG" alt="" /> -->
+      <div id="map" class="map"></div>
+      <div class="clear"></div>
     </div>
-    <div class="section section-foot">
-      <div class="text-item">
-        <h3></h3>
-        <p></p>
+    <div class="section section-footer">
+      <div class="section-foot">
+        <div class="text-item">
+          <h3>About us</h3>
+          <table>
+            <tr>
+              <td>
+                <p>
+                  I am text block. Click edit button to change this text. Lorem
+                  ipsum dolor sit amet, consectetur. I am text block. Click edit
+                  button to change this text. Lorem ipsum dolor sit amet,
+                  consectetur.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  We are the champions! We are the most amazing theme of all
+                  time, yeah.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="text-item">
+          <h3>Why we are special?</h3>
+          <table>
+            <tbody>
+              <tr>
+                <td><img src="images/Icons/arrow.png" alt="" /></td>
+                <td><p>Our magical recipe.</p></td>
+              </tr>
+              <tr>
+                <td><img src="images/Icons/arrow.png" alt="" /></td>
+                <td><p>We care about environment.</p></td>
+              </tr>
+              <tr>
+                <td><img src="images/Icons/arrow.png" alt="" /></td>
+                <td><p>We are trusted by hundreds of clients.</p></td>
+              </tr>
+              <tr>
+                <td><img src="images/Icons/arrow.png" alt="" /></td>
+                <td><p>Social media loves us!</p></td>
+              </tr>
+              <tr>
+                <td><img src="images/Icons/arrow.png" alt="" /></td>
+                <td><p>This list is super easy to create.</p></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="text-item">
+          <h3>Opening Hours</h3>
+          <table>
+            <tbody>
+              <tr>
+                <td><img src="images/Icons/arrow.png" alt="" /></td>
+                <td><p>Monday 10AM - 9PM</p></td>
+              </tr>
+              <tr>
+                <td><img src="images/Icons/arrow.png" alt="" /></td>
+                <td><p>Tuesday 10AM - 9PM</p></td>
+              </tr>
+              <tr>
+                <td><img src="images/Icons/arrow.png" alt="" /></td>
+                <td><p>Wednesday 10AM - 9PM</p></td>
+              </tr>
+              <tr>
+                <td><img src="images/Icons/arrow.png" alt="" /></td>
+                <td><p>Thursday 10AM - 10PM</p></td>
+              </tr>
+              <tr>
+                <td><img src="images/Icons/arrow.png" alt="" /></td>
+                <td><p>Friday 10AM - 10PM</p></td>
+              </tr>
+              <tr>
+                <td><img src="images/Icons/arrow.png" alt="" /></td>
+                <td><p>Weekends 10AM - 11PM</p></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="text-item">
+          <h3>Contact Details</h3>
+          <table>
+            <tbody>
+              <tr>
+                <td><img src="images/Icons/location.png" alt="" /></td>
+                <td>
+                  <p>
+                    Manchester Road 123-78B, Silictown 7854MD, Great Country
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="images/Icons/phone-gray.png" alt="" /></td>
+                <td><p>+46 123 456 789</p></td>
+              </tr>
+              <tr>
+                <td><img src="images/Icons/email-solid.png" alt="" /></td>
+                <td><p>hello@sitename.com</p></td>
+              </tr>
+              <tr>
+                <td><img src="images/Icons/earth.png" alt="" /></td>
+                <td><p>http://www.sitename.com</p></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
+    </div>
+    <div class="section section-final">
+      <img src="images/bakery-light-1.png" alt="logo" class="main-pic" />
+      <p>Copyright 2017. All rights reserved.</p>
+      <a href="#"><img src="images/Icons/facebook.png" alt="facebook" /></a>
+      <a href="#"><img src="images/Icons/google.png" alt="google" /></a>
+      <a href="#"><img src="images/Icons/linkedin.png" alt="linkedin" /></a>
+      <a href="#"><img src="images/Icons/twitter.png" alt="twitter" /></a>
     </div>
   </body>
 </html>
