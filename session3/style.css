@@ -1,0 +1,16 @@
+h1 {
+  text-align: center;
+}
+h1 span {
+  font-size: 40px;
+  color: aqua;
+}
+.item {
+  background-color: tomato;
+  display: inline-block;
+  width: 24.5%;
+  text-align: center;
+}
+.item img {
+  width: 100%;
+}

@@ -1,0 +1,15 @@
+.menu {
+  width: 100%;
+  text-align: center;
+}
+.menu h2,
+.menu-item h3 {
+  color: blue;
+}
+.menu-item {
+  width: 33%;
+  float: left;
+}
+.clear {
+  clear: both;
+}
