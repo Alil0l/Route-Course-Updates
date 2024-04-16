@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      :root {
+        --main-color: tomato;
+        --spacing: 12px;
+        --items-no: 4;
+      }
+      @font-face {
+        font-family: "lol";
+        src: url(fonts/AmaticSC-Regular.ttf);
+      }
+      body {
+        margin: 0;
+      }
+      .parent {
+        display: flex;
+        background-color: #eee;
+        padding: 24px;
+        height: 100vh;
+        margin: auto;
+      }
+      .child {
+        background-color: var(--main-color);
+        width: calc(100% / var(--items-no) - 2 * var(--spacing));
+        height: 100%;
+        margin-inline: var(--spacing);
+        display: flex;
+        flex-direction: column;
+        font-family: "lol";
+        justify-content: center;
+
+        align-items: center;
+        gap: calc(var(--spacing) * 4);
+        font-size: 40px;
+      }
+      .child img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">
+        Hello
+        <img src="RouteLogo.jpeg" alt="" />
+      </div>
+
+      <div class="child">
+        Hello
+        <img src="RouteLogo.jpeg" alt="" />
+      </div>
+
+      <div class="child">
+        Hello
+        <img src="RouteLogo.jpeg" alt="" />
+      </div>
+
+      <div class="child">
+        Hello
+        <img src="RouteLogo.jpeg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
