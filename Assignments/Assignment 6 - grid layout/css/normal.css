@@ -62,17 +62,17 @@ span {
     justify-content: flex-start;
     span {
       color: #9fa3a7;
-      font-size: 12px;
+      font-size: 1rem;
       text-transform: uppercase;
       letter-spacing: 1px;
     }
     h1 {
-      font-size: 18px;
+      font-size: 1.5rem;
       font-weight: 400;
     }
     p {
       color: #9fa3a7;
-      font-size: 12px;
+      font-size: 0.875rem;
     }
   }
   .a1-img {
@@ -100,7 +100,7 @@ span {
     text-align: center;
     span {
       color: #9fa3a7;
-      font-size: 12px;
+      font-size: 0.875rem;
       text-transform: uppercase;
       letter-spacing: 1px;
     }
@@ -112,7 +112,7 @@ span {
     }
     a {
       color: #23cef4;
-      font-size: 12px;
+      font-size: 0.875rem;
       text-decoration: underline;
     }
   }
@@ -136,13 +136,13 @@ span {
   }
   h1 {
     width: 50%;
-    font-size: 18px;
+    font-size: 1.5rem;
     font-weight: 700;
     color: white;
   }
   span {
     color: #ffc80a;
-    font-size: 12px;
+    font-size: 0.875rem;
     text-transform: uppercase;
     letter-spacing: 1px;
   }
@@ -160,9 +160,12 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 24px;
+    padding-top: 4rem;
     .a4-img {
-      align-self: flex-start;
+      display: flex;
+      justify-content: start;
+      align-items: end;
+      width: 350px;
       img {
         width: 40%;
         display: block;
@@ -171,27 +174,30 @@ span {
     .a4-text {
       display: flex;
       align-items: flex-start;
-      gap: 20%;
+      gap: 3rem;
+
       .text-left {
+        width: 50%;
         span {
           color: #9fa3a7;
-          font-size: 12px;
+          font-size: 0.875rem;
           text-transform: uppercase;
           letter-spacing: 1px;
         }
         h1 {
-          font-size: 18px;
+          margin-top: 1rem;
+          font-size: 1.25rem;
           font-weight: 400;
         }
       }
       .text-right {
         p {
           color: #9fa3a7;
-          font-size: 12px;
+          font-size: 1rem;
         }
         a {
           color: #23cef4;
-          font-size: 12px;
+          font-size: 0.875rem;
         }
       }
     }
@@ -224,7 +230,7 @@ span {
       border-radius: 999px;
     }
     span {
-      font-size: 8px;
+      font-size: 0.8rem;
       font-weight: bold;
       text-transform: uppercase;
       color: white;
@@ -246,12 +252,12 @@ span {
     padding-inline: 60px;
     h1 {
       color: white;
-      font-size: 24px;
+      font-size: 1.5rem;
       margin-bottom: 8px;
     }
     p {
       color: white;
-      font-size: 12px;
+      font-size: 1rem;
       line-height: 1.2rem;
       margin-bottom: 24px;
       padding-inline: 24px;
@@ -259,7 +265,7 @@ span {
     a {
       text-transform: uppercase;
       color: black;
-      font-size: 8px;
+      font-size: 0.5rem;
       line-height: 0.5rem;
       letter-spacing: 1px;
       font-weight: bold;
@@ -353,7 +359,16 @@ span {
   align-items: center;
   gap: 12px;
   text-align: center;
-
+  position: relative;
+  overflow: hidden;
+  .circle {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 260px;
+    height: 260px;
+    z-index: 4;
+    border-radius: 50%;
+  }
   .img {
     width: 10%;
     img {

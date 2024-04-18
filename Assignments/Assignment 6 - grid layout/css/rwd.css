@@ -1,19 +1,54 @@
-@media (min-width: 977px) {
+@media (min-width: 971px) {
 }
-@media (max-width: 776px) {
+@media (max-width: 970px) {
   .container {
-    height: 150vh;
-    display: grid;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
+    height: 400vh;
     grid-template-areas:
       "Area2 Area2 "
       "Area1 Area1 "
-      "Area3 Area4 "
-      "Area5 Area6 "
-      "Area7 Area8 "
-      "Area9 Area10 ";
+      "Area3 Area6 "
+      "Area4 Area4 "
+      "Area8 Area5 "
+      "Area7 Area5 "
+      "Area9 Area9 "
+      "Area10 Area10 ";
+  }
+  .Area4 {
+    background-color: white;
+    grid-area: Area4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .a4-cont {
+      width: 80%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: 4rem;
+      .a4-img {
+        display: flex;
+        justify-content: start;
+        align-items: end;
+        width: 350px;
+        img {
+          width: 40%;
+          display: block;
+        }
+      }
+      .a4-text {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .text-left {
+          width: 30%;
+        }
+        .text-right {
+          width: 50%;
+        }
+      }
+    }
   }
 }
 
