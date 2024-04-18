@@ -55,18 +55,108 @@
 @media (max-width: 575px) {
   .container {
     width: 100%;
-    height: 150vh;
-    display: grid;
+    height: 500vh;
     grid-template-areas:
-      "Area1"
       "Area2"
+      "Area1"
       "Area3"
-      "Area4"
-      "Area5"
       "Area6"
-      "Area7"
+      "Area4"
       "Area8"
+      "Area7"
+      "Area5"
       "Area9"
       "Area10";
+  }
+  .Area1 {
+    padding-top: 40px;
+    gap: 20px;
+    flex-direction: column;
+    .a1-text {
+      width: 60%;
+    }
+    .a1-img {
+      align-self: center;
+      img {
+        width: 90%;
+      }
+    }
+  }
+
+  .Area2 {
+    padding: 40px 0;
+    .a2-text {
+      h1 {
+        width: 70%;
+      }
+    }
+  }
+
+  .Area3 {
+    padding: 40px 0;
+  }
+  .Area6 {
+    padding: 40px 0;
+  }
+  .Area4 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .a4-cont {
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: 4rem;
+      .a4-img {
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        img {
+          width: 40%;
+          display: block;
+        }
+      }
+      .a4-text {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 8px;
+        .text-left {
+          width: 90%;
+        }
+        .text-right {
+          width: 90%;
+        }
+      }
+    }
+  }
+  .Area8 {
+  }
+  .Area5 {
+    padding: 50px 0;
+  }
+  .Area7 {
+  }
+
+  .Area9 {
+  }
+
+  .Area10 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+
+    h1 {
+      width: 90%;
+    }
+    .img {
+      width: 50%;
+      img {
+        transform: translate(-25%);
+        width: 100%;
+      }
+    }
   }
 }
