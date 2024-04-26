@@ -1,8 +1,0 @@
-// Import layout file
-@use "./layout/layout";
-// Import colors
-@use "./variables/colors" as *;
-
-* {
-  background-color: $main;
-}

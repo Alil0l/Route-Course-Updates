@@ -1,0 +1,91 @@
+// No need for global rules bcs bootstrap adds it.
+
+$my-main-color: hsl(0, 46%, 50%);
+
+// Mixins
+// Adding local fonts
+@mixin font($font-family, $font-files) {
+  @each $font-file, $font-weight in $font-files {
+    @font-face {
+      font-family: "#{$font-family}-#{$font-weight}";
+      src: url("#{$font-file}.ttf");
+      font-weight: $font-weight;
+    }
+  }
+}
+$Poppins-font-files: (
+  ("../assets/fonts/Poppins-Bold", 700),
+  ("../assets/fonts/Poppins-Regular", 400),
+  ("../assets/fonts/Poppins-Light", 300),
+  ("../assets/fonts/Poppins-ExtraLight", 200)
+);
+$Raleway-font-files: (
+  ("../assets/fonts/Raleway-Black", 800),
+  ("../assets/fonts/Poppins-Bold", 700),
+  ("../assets/fonts/Poppins-Medium", 600),
+  ("../assets/fonts/Poppins-Regular", 400)
+);
+
+@include font("Raleway", $Raleway-font-files);
+@include font("Poppins", $Poppins-font-files);
+
+// Global classes
+
+.h-100vh {
+  height: 100dvh;
+}
+
+// End of  mixins and classes
+
+//  Start of the main stylesheet
+
+// Nav Styling
+nav {
+  .navbar-brand {
+    color: $my-main-color !important;
+  }
+  .nav-link {
+    position: relative;
+    ::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 1px;
+      background-color: $my-main-color;
+      bottom: 0;
+      left: 0;
+      transition: width 1s;
+    }
+  }
+  .nav-link:hover {
+    color: $my-main-color !important;
+
+    ::after {
+      width: 70%;
+    }
+  }
+}
+
+// styling header
+
+header.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../assets/images/hero\ img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  h1 {
+    font-size: 5rem;
+  }
+  span {
+    font-size: 3rem;
+  }
+  .row {
+    a {
+      text-decoration: none;
+      color: ($my-main-color);
+    }
+  }
+}
+
+// end  of styling header

@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Raleway-800";
+  src: url("../assets/fonts/Raleway-Black.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Raleway-700";
+  src: url("../assets/fonts/Poppins-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Raleway-600";
+  src: url("../assets/fonts/Poppins-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Raleway-400";
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins-700";
+  src: url("../assets/fonts/Poppins-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Poppins-400";
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins-300";
+  src: url("../assets/fonts/Poppins-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Poppins-200";
+  src: url("../assets/fonts/Poppins-ExtraLight.ttf");
+  font-weight: 200;
+}
+.h-100vh {
+  height: 100dvh;
+}
+
+nav .navbar-brand {
+  color: hsl(0, 46%, 50%) !important;
+}
+nav .nav-link {
+  position: relative;
+}
+nav .nav-item .active {
+  color: hsl(0, 46%, 50%) !important;
+}
+nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background-color: hsl(0, 46%, 50%);
+  bottom: 0;
+  left: 0;
+  transition: width 1s;
+}
+nav .nav-link:hover {
+  color: hsl(0, 46%, 50%) !important;
+}
+nav .nav-link:hover::after {
+  width: 70%;
+}
+
+header.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../assets/images/hero\ img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+header.header h1 {
+  font-size: 5rem;
+}
+header.header span {
+  font-size: 3rem;
+}
+header.header .row a {
+  text-decoration: none;
+  color: hsl(0, 46%, 50%);
+} /*# sourceMappingURL=main.css.map */
