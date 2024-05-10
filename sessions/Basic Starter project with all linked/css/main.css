@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Raleway-800";
+  src: url("../assets/fonts/Raleway-Black.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Raleway-700";
+  src: url("../assets/fonts/Poppins-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Raleway-600";
+  src: url("../assets/fonts/Poppins-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Raleway-400";
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins-700";
+  src: url("../assets/fonts/Poppins-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Poppins-400";
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins-300";
+  src: url("../assets/fonts/Poppins-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Poppins-200";
+  src: url("../assets/fonts/Poppins-ExtraLight.ttf");
+  font-weight: 200;
+}
+.h-100vh {
+  height: 100dvh;
+}
+
+body {
+  background-color: #f5f5f5;
+}/*# sourceMappingURL=main.css.map */
